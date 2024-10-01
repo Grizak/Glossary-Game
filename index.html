@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glossary Game</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="main.js"></script>
+</head>
+<body>
+  <h1>Glossary Game</h1>
+  
+  <!-- Input for Glossary -->
+  <textarea id="glossary-input" placeholder="Paste your glossary here (format: word - translation)"></textarea>
+  <button onclick="startGame()">Start Game</button>
+
+  <!-- Game Area -->
+  <div id="game-area" style="display:none;">
+    <p id="prompt"></p>
+    <input type="text" id="answer" placeholder="Type your answer">
+    <button onclick="submitAnswer()">Submit</button>
+    <p id="feedback"></p>
+  </div>
+</body>
+</html>
